@@ -1,0 +1,39 @@
+// Colors
+// -------------------------
+
+// Brand colors
+$vgr-blue: #005c95;
+$vgr-blue-dark: #003D62;
+$vgr-orange: #FFA500;
+
+$vgr-gray: #ccc;
+$vgr-gray-dark: #777;
+
+
+// App colors
+$primary: $vgr-blue;
+$primary-darker: $vgr-blue-dark;
+$secondary: $vgr-orange;
+
+$background-color: #fafafa;
+
+// Bootstrap overrides
+// -------------------------
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $primary-darker
+);
+
+$font-family-sans-serif:      "Open Sans", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$line-height-base: 1.5;
+
+// Sizes
+// -------------------------
+
+$footer-height: 6rem;
+

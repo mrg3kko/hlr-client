@@ -1,0 +1,19 @@
+.btn {
+    display: inline-flex;
+    vertical-align: middle;
+
+    .btn-label {
+        //background: red;
+    }
+
+    .material-icons {
+
+        &.icon-left {
+            margin-right: 0.25rem;
+        }
+
+        &.icon-right {
+            margin-left: 0.25rem;
+        }
+    }
+}

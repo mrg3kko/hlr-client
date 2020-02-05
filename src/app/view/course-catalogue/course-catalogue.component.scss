@@ -1,0 +1,11 @@
+@import '../../../assets/scss/utilities/variables';
+
+.course-catalogue {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-catalogue-entry {
+    flex: 0 1 calc(33.3333% - 2rem);
+    margin: 0rem 2rem 2rem 0;
+}

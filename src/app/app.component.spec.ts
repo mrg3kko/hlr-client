@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'draft-hlr-client'`, () => {
+  it(`should have as title 'hlr-client'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('draft-hlr-client');
+    expect(app.title).toEqual('hlr-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('draft-hlr-client app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('hlr-client app is running!');
   });
 });

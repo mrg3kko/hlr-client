@@ -1,0 +1,9 @@
+.card {
+    border-width: 0;
+    @include box_shadow(1);
+
+    &.card-decorate {
+        border-top: 4px solid $primary;
+    }
+
+}

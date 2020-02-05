@@ -1,0 +1,20 @@
+.catalogue-card {
+
+    .default-img {
+        background: $primary;
+        height: 100px;
+        overflow-y: hidden;
+    }
+
+    .card-title {
+        color: $primary;
+    }
+
+    .course-seats {
+        .badge {
+            margin-right: 0.25rem;
+        }
+    }
+
+}
+

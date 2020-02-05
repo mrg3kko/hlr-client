@@ -1,0 +1,31 @@
+<h1>Kurskatalog</h1>
+
+<div class="course-catalogue">
+
+    <div class="course-catalogue-entry" *ngFor="let entry of entries">
+
+        <div class="card catalogue-card">
+            <div class="card-img-top default-img">
+                <img src="../../../assets/images/vgr-dekorelement.svg" alt="VGR-deko">
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">{{ entry.course.title }}</h5>
+
+                <p class="course-seats">
+                    <span class="badge badge-pill badge-success">{{ entry.numCourseEventsWithSeats }}</span>
+                    <small class="text-muted">Tillfällen med plats</small>
+                </p>
+
+                <div class="text-center">
+                    <a routerLink="/kurs/{{ entry.course.id }}" class="btn btn-primary" role="button" aria-pressed="true">
+                        Mer info / Anmälan <i class="material-icons icon-right">arrow_forward</i>
+                    </a>
+                </div>
+
+            </div>            
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Variables
+@import 'assets/scss/utilities/variables';
+@import 'assets/scss/utilities/material-icons';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Utilities
+@import 'assets/scss/utilities/sticky-footer';
+@import 'assets/scss/utilities/mixins';
+
+// Atoms
+@import 'assets/scss/atoms/button';
+@import 'assets/scss/atoms/heading';
+
+// Molecules
+@import 'assets/scss/molecules/card';
+@import 'assets/scss/molecules/catalogue-card';
