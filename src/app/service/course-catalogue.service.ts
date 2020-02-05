@@ -8,7 +8,7 @@ import { MockDataService } from '../mock/MockDataService';
 export class CourseCatalogueService {
 
   constructor(public mockDataService: MockDataService) { }
-
+  
   public getCourseCatalogueEntries():Array<CourseCatalogueEntry> {
     
     return this.mockDataService.getCourseCatalogueEntries();
