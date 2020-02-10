@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Course } from 'src/app/domain/Course';
-import { CourseService } from '../../service/course.service';
+import { CourseEvent } from 'src/app/domain/CourseEvent';
+import { CourseService } from '../../service/course.service'
+import { CourseEventService } from '../../service/course-event.service';
 
 @Component({
   selector: 'app-course',
@@ -11,22 +13,21 @@ import { CourseService } from '../../service/course.service';
 export class CourseComponent implements OnInit {
 
   course: Course;
+  courseEvents: Array<CourseEvent>;
 
   constructor(
       private route: ActivatedRoute,
       private router: Router,
-      public courseService:CourseService
+      public courseService:CourseService,
+      public courseEventService:CourseEventService
     ){
       
     }
 
   ngOnInit() {
     const params = this.route.snapshot.params;
-
-    console.log('param.course: ' + params.course);
-
     this.course = this.courseService.getCourse(params.course);
-
+    this.courseEvents = this.courseEventService.getCourseEvents(params.course);
   }
 
 }

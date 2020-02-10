@@ -6,10 +6,10 @@ import { HomeComponent } from './view/home/home.component';
 
 
 const routes: Routes = [
-  {path: "", pathMatch: "full", redirectTo: 'home'},
-  {path: "start", component: HomeComponent},
-  {path: "kurskatalog", component: CourseCatalogueComponent},
-  {path: "kurs/:course", component: CourseComponent}
+  {path: '', pathMatch: 'full', redirectTo: 'start'},
+  {path: 'start', component: HomeComponent},
+  {path: 'kurskatalog', component: CourseCatalogueComponent},
+  {path: 'kurs/:course', component: CourseComponent}
 ];
 
 @NgModule({

@@ -10,7 +10,8 @@
 
         <div class="card card-decorate">
             <div class="card-body">
-                Kursinfo här
+                <h2>Kursinfo</h2>
+                <div [innerHTML]="course.description"></div>    
             </div>
         </div>
 
@@ -21,7 +22,33 @@
 
         <div class="card card-decorate">
             <div class="card-body">
-                Kurstillfällen här
+                <h2>Kurstillfällen</h2>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Datum</th>
+                        <th scope="col">Tid</th>
+                        <th scope="col">Plats</th>
+                        <th scope="col">Lediga platser</th>
+                        <th scope="col">Anmälda</th>
+                        <th scope="col">Anmälan</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let courseEvent of courseEvents">
+                        <td>{{courseEvent.date}}</td>
+                        <td>{{courseEvent.startTime}} - {{courseEvent.endTime}}</td>
+                        <td>{{courseEvent.location}}</td>
+                        <td>{{courseEvent.availableSeats}}</td>
+                        <td>{{courseEvent.registrations}}</td>
+                        <td>
+                            <a href="" class="btn btn-primary">Anmäl dig</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
             </div>
         </div>
 

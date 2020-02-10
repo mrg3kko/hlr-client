@@ -4,6 +4,18 @@
 
     &.card-decorate {
         border-top: 4px solid $primary;
+
+        h2 {
+            color: $primary;
+            font-size: 1.625rem;
+            margin: 0 0 1.0rem 0;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+            font-weight: bold;
+        }
+
     }
 
 }
